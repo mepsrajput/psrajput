@@ -16,4 +16,4 @@ app.get("/", (req, res) => res.render("index"));
 app.get("/gcp", (req, res) => res.render("gcp"));
 
 
-app.listen(3000, () => console.log("server started"));
+app.listen(process.env.PORT || 3000, () => console.log("server started"));
