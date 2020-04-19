@@ -1,0 +1,23 @@
+{
+  "name": "psrajput",
+  "version": "1.0.0",
+  "description": "Portfolio of Pradeep Singh",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mepsrajput/psrajput.git"
+  },
+  "author": "Pradeep Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mepsrajput/psrajput/issues"
+  },
+  "homepage": "https://github.com/mepsrajput/psrajput#readme"
+}
