@@ -13,6 +13,8 @@
   <style>
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;text-decoration:none;scroll-behavior:smooth}body{font-family:system-ui,sans-serif;background:#fff;height:100%}img{max-width:100%}.flex-parent{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}#main{max-width:100%;-webkit-touch-callout:none;background:#eeefe5}#about{min-height:100vh}#main-nav{width:100%;height:5rem!important;margin:0;padding:0 8rem;background-color:#2098d1;text-transform:uppercase;font-size:1rem}#left-nav,#right-nav{display:inline-block;height:3rem}#left-nav{float:left}#right-nav{float:right;margin-top:2rem}#main-nav a{padding:1.5rem 1rem!important;line-height:3rem;color:#fff}#logo{width:3rem;height:3rem;margin-top:1.5rem}#open-slide{width:1rem;height:1rem;position:fixed;top:1.5rem;right:1.5rem}#open-slide i{font-size:1.5rem}#side-nav{display:none}#side-menu{text-align:center;position:fixed;z-index:2;top:0;right:0;width:0;height:100%;overflow:hidden;background:-webkit-linear-gradient(300deg,#cbc0b7,#618bb4);background:-o-linear-gradient(300deg,#cbc0b7,#618bb4);background:linear-gradient(150deg,#cbc0b7,#618bb4)}#side-menu a{color:#00f;display:block;font-weight:700;width:100%;font-size:1.2rem;border-bottom:1px solid #999;padding:25px 0;margin:0 auto}#about{color:#fff;text-align:center;background:#2098d1}h1{font-size:2rem;font-weight:500;font-family:YatraOne,cursive}#intro-text{font-size:1.4rem;font-weight:300;margin-top:.5rem;font-family:OpenSans,sans-serif}#social-links{margin:2rem auto}#social-links a{text-decoration:none;color:#f9f9f9;font-size:2rem;margin:0 .6rem}#scroller-container{display:none;position:fixed;bottom:1rem;right:1rem}#scroll-up{text-align:center;width:3rem;height:3rem;line-height:3rem;font-size:1.5rem;background:rgba(7,7,7,.1);border:1px solid #999;border-radius:30%;color:#fff;-ms-transform:rotate(-12deg);-webkit-transform:rotate(-12deg);transform:rotate(-12deg)}#scroller-bottom{height:1px;width:2rem;padding:0;display:block;position:relative;margin:-2px auto 0!important;-webkit-box-shadow:3px 5px 5px #000;box-shadow:3px 5px 5px #000}@media screen and (max-width:762px){#main-nav{padding:0}#left-nav{display:block;width:100px;margin:0 auto}#right-nav{display:none}#side-nav{display:block}#social-links a{font-size:1.5rem;margin:0 .5rem}#scroll-up{width:2rem!important;height:2rem!important;line-height:2rem;font-size:1rem}}@media screen and (min-width:763px) and (max-width:1200px){#main,html,body{margin:0}#about{width:100%}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){#about{height:110vh;margin:auto}*::-ms-backdrop,#about{height:110vh;margin:auto}}
   </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -34,7 +36,7 @@
       <div id="left-nav">
         <a href="#">
           <picture>
-            <source srcset="/img/ps6.webp" type="image/webp" />
+            <source srcset="/img/webp/ps6.webp" type="image/webp" />
             <source srcset="/img/ps6.png" type="image/jpeg" />
             <img src="/img/ps6.png" alt="Logo" title="Pradeep Singh Portfolio Logo" id="logo">
           </picture>
@@ -77,25 +79,25 @@
       <div class="container flex-parent" id="expertise-container">
         <div class="skill-container">
           <div id="wordpress" class="skill">
-            <img src="img/wordpress.svg" alt="Wordpress Logo" title="Wordpress Development">
+            <img src="img/svg/wordpress.svg" alt="Wordpress Logo" title="Wordpress Development">
           </div>
           <p class="skill-heading" id="wordpress-text">Wordpress Development</p>
         </div>
         <div class="skill-container">
           <div id="responsive" class="skill">
-            <img src="img/responsive.svg" alt="Responsive Image" title="Responsive Web Development">
+            <img src="img/svg/responsive.svg" alt="Responsive Image" title="Responsive Web Development">
           </div>
           <p class="skill-heading" id="responsive-text">Responsive Websites</p>
         </div>
         <div class="skill-container">
           <div id="digital-marketing" class="skill">
-            <img src="img/digital-marketing.svg" alt="Digital Marketing" title="Digital Marketing, SEO, SEM, SMM">
+            <img src="img/svg/digital-marketing.svg" alt="Digital Marketing" title="Digital Marketing, SEO, SEM, SMM">
           </div>
           <p class="skill-heading" id="marketing-text">Digital Marketing</p>
         </div>
         <div class="skill-container">
           <div id="seo" class="skill">
-            <img src="img/seo.svg" alt="SEO" title="SEO Optimization">
+            <img src="img/svg/seo.svg" alt="SEO" title="SEO Optimization">
           </div>
           <p class="skill-heading" id="seo-text">SEO Optimization</p>
         </div>
@@ -109,7 +111,7 @@
             <div class="project-image-container">
               <a href="https://mepsrajput.github.io/portfolio/" target="_blank">
                 <picture>
-                  <source srcset="/img/portfolio.webp" type="image/webp" />
+                  <source srcset="/img/webp/portfolio.webp" type="image/webp" />
                   <source srcset="/img/portfolio.jpg" type="image/jpeg" />
                   <img  class="project-image" src="/img/portfolio.jpg" title="Portfolio Project" alt="Portfolio">
                 </picture>
@@ -124,7 +126,7 @@
             <div class="project-image-container">
               <a href="https://codepen.io/mepsrajput/full/yjVrPN/" target="_blank">
                 <picture>
-                  <source srcset="/img/pixel-art.webp" type="image/webp" />
+                  <source srcset="/img/webp/pixel-art.webp" type="image/webp" />
                   <source srcset="/img/pixel-art.jpg" type="image/jpeg" />
                   <img src="/img/pixel-art.jpg" alt="Pixel Art Maker" title="Pixel Art Maker Project" class="project-image">
                 </picture>
@@ -139,7 +141,7 @@
             <div class="project-image-container">
               <a href="https://mepsrajput.github.io/TributePage/" target="_blank">
                 <picture>
-                  <source srcset="/img/sachin.webp" type="image/webp" />
+                  <source srcset="/img/webp/sachin.webp" type="image/webp" />
                   <source srcset="/img/sachin.jpg" type="image/jpeg" />
                   <img src="/img/sachin.jpg" alt="Sachin Tendulkar" title="Tribute Page for Sachin" class="project-image">
                 </picture>
@@ -154,7 +156,7 @@
             <div class="project-image-container">
               <a href="https://mepsrajput.github.io/ImageGallery/" target="_blank">
                 <picture>
-                  <source srcset="/img/image-gallery.webp" type="image/webp" />
+                  <source srcset="/img/webp/image-gallery.webp" type="image/webp" />
                   <source srcset="/img/image-gallery.jpg" type="image/jpeg" />
                   <img src="/img/image-gallery.jpg" alt="Image Gallery" title="Image Gallery Project" class="project-image">
                 </picture>
@@ -169,7 +171,7 @@
             <div class="project-image-container">
               <a href="https://mepsrajput.github.io/WeatherApp/" target="_blank">
                 <picture>
-                  <source srcset="/img/weather.webp" type="image/webp" />
+                  <source srcset="/img/webp/weather.webp" type="image/webp" />
                   <source srcset="/img/weather.jpg" type="image/jpeg"/>
                   <img src="/img/weather.jpg" alt="Weather App" title="Weather App Project" class="project-image">
                 </picture>
@@ -184,7 +186,7 @@
             <div class="project-image-container">
               <a href="https://mepsrajput.github.io/RandomQuoteGenerator/" target="_blank">
                 <picture>
-                  <source srcset="/img/random.webp" type="image/webp" />
+                  <source srcset="/img/webp/random.webp" type="image/webp" />
                   <source srcset="/img/random.jpg" type="image/jpeg" />
                   <img src="/img/random.jpg" alt="Quote Generator" title="Random Quote Generator" class="project-image">
                 </picture>
@@ -286,19 +288,21 @@
                 </section>
 
                 <section id="contact">
-                  <div class="header">
-                    <h3>Get In Touch</h3></div>
+                  <div class="header"><h3>Get In Touch</h3></div>
                     <div id="form-container">
-                      <form autocomplete="off" onsubmit="return validateForm()" action="https://formspree.io/viveksingh12126@gmail.com" method="POST" id="form">
-                        <input type="text" name="name" id="name" required autocomplete="off">
+                      <form name="contactForm" autocomplete="off" id="form">
+                        <input type="text" name="name" id="name" required autocomplete="off" spellcheck="false">
                         <label id="name-label" for="name">Full Name</label>
-                        <input type="text" name="email" id="email" required autocomplete="off">
-                        <label id="email-label" for="email">Email</label>
-                        <textarea name="message" rows="1" id="textarea" required></textarea>
-                        <label id="msg" for="textarea">Message</label>
-                        <div id="separator"></div>
-                        <button id="submit-btn">Submit</button>
+                        <input type="email" name="email" id="email" required autocomplete="off">
+                        <label id="email-label" for="email" >Email</label>
+                        <textarea name="message" rows="5" id="textarea" required placeholder="Message"></textarea>
+                        <label id="msg" for="textarea"></label>
+                        <button id="submit">Submit</button>
                       </form>
+                    </div>
+
+                    <div id="formSuccessContainer">
+                      <span id="formSuccess"></span>
                     </div>
                   </section>
                 </main>
@@ -307,9 +311,9 @@
                   <section class="container flex-parent" id="footer-container">
                     <div id="about-me" class="footer-content">
                       <picture>
-                        <source srcset="img/ps 1.webp" type="image/webp" />
-                        <source srcset="img/ps 1.jpg" type="image/jpeg" />
-                        <img src="img/ps 1.jpg" alt="Pradeep Singh" title="Pradeep Singh">
+                        <source srcset="img/webp/ps1.webp" type="image/webp" />
+                        <source srcset="img/ps1.jpg" type="image/jpeg" />
+                        <img src="img/ps1.jpg" alt="Pradeep Singh" title="Pradeep Singh">
                       </picture>
                       "Web and Wordpress Developer. Apart from this I'm a <a href="http://eduonline24.in">Blogger</a> as well.
                       I always give priority to create SEO optimized, responsive websites which loads faster on any type
@@ -357,6 +361,7 @@
                         <div id="scroller-bottom"></div>
                       </div>
                       <link rel="stylesheet" href="css/style.css">
+   
                       <script src="js/script.js"></script>
                     </body>
 
